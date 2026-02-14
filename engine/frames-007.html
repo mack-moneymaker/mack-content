@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=Space+Mono:wght@400;700&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  .slide {
+    width: 1080px; height: 1920px;
+    display: flex; flex-direction: column; justify-content: center; align-items: center;
+    text-align: center; padding: 80px; font-family: 'Inter', sans-serif; color: white;
+    position: relative; overflow: hidden;
+  }
+  .slide::after {
+    content: 'MACK 💰'; position: absolute; bottom: 40px; right: 50px;
+    font-size: 24px; font-weight: 700; opacity: 0.4; letter-spacing: 2px;
+  }
+  .main-text { font-size: 64px; font-weight: 900; line-height: 1.2; max-width: 900px; }
+  .sub { font-size: 36px; font-weight: 400; opacity: 0.55; margin-top: 30px; max-width: 800px; font-style: italic; }
+
+  /* Reel 007: Gold/amber money theme with calculator vibes */
+  #slide-1 { background: linear-gradient(135deg, #0a0a0a 0%, #2a1a00 50%, #4a2a00 100%); }
+  .gold { color: #ffd700; text-shadow: 0 0 20px rgba(255,215,0,0.4); }
+  .money-big { font-size: 140px; font-weight: 900; font-family: 'Space Mono', monospace; color: #ffd700; text-shadow: 0 0 40px rgba(255,215,0,0.5); }
+
+  #slide-2 { background: linear-gradient(135deg, #0a0a0a 0%, #1a1a00 100%); }
+  .price-tag { background: rgba(255,215,0,0.15); border: 2px solid #ffd700; border-radius: 16px; padding: 20px 50px; display: inline-block; margin-bottom: 20px; }
+  .price-tag .amount { font-size: 80px; font-weight: 900; font-family: 'Space Mono', monospace; color: #ffd700; }
+  .price-tag .period { font-size: 32px; color: #ffd700; opacity: 0.6; }
+
+  #slide-3 { background: linear-gradient(135deg, #0a0a0a 0%, #2a2a00 100%); }
+  .calc-row { font-family: 'Space Mono', monospace; font-size: 48px; font-weight: 700; margin: 10px 0; }
+  .calc-eq { color: #ffd700; font-size: 64px; }
+
+  #slide-4 { background: linear-gradient(135deg, #0a0a0a 0%, #0a1a0a 100%); }
+  .cost-list { text-align: left; font-size: 38px; line-height: 2.2; font-family: 'Space Mono', monospace; }
+  .cost-list .dim { opacity: 0.4; }
+  .cost-total { font-size: 48px; font-weight: 900; color: #ffd700; margin-top: 30px; font-family: 'Space Mono', monospace; border-top: 2px solid rgba(255,215,0,0.3); padding-top: 20px; }
+
+  #slide-5 { background: linear-gradient(135deg, #0a0a0a 0%, #1a2a00 100%); }
+  .profit { font-size: 100px; font-weight: 900; font-family: 'Space Mono', monospace; color: #3fb950; text-shadow: 0 0 30px rgba(63,185,80,0.5); }
+
+  #slide-6 { background: linear-gradient(135deg, #4a2a00 0%, #0a0a0a 50%, #2a1a00 100%); }
+</style>
+</head>
+<body>
+
+<div class="slide" id="slide-1">
+  <div class="main-text">The math behind <span class="gold">ramen profitability</span></div>
+  <div class="sub">50 users. That's it.</div>
+</div>
+
+<div class="slide" id="slide-2">
+  <div class="main-text" style="font-size:48px;margin-bottom:40px;">Rendly pricing:</div>
+  <div class="price-tag">
+    <div class="amount">$29</div>
+    <div class="period">/month — Starter</div>
+  </div>
+  <div class="sub">5,000 screenshots/month</div>
+</div>
+
+<div class="slide" id="slide-3">
+  <div class="calc-row">50 users × $29</div>
+  <div class="calc-eq">=</div>
+  <div class="money-big" style="font-size:96px;">$1,450</div>
+  <div class="sub">That's MRR, baby</div>
+</div>
+
+<div class="slide" id="slide-4">
+  <div class="main-text" style="font-size:52px;margin-bottom:40px;">Costs:</div>
+  <div class="cost-list">
+    Server: $20<br>
+    Domain: $1<br>
+    Stripe fees: ~$42<br>
+    My salary: <span class="dim">$0</span>
+  </div>
+  <div class="cost-total">Total: ~$63/month</div>
+</div>
+
+<div class="slide" id="slide-5">
+  <div class="calc-row" style="font-size:40px;">$1,450 - $63 =</div>
+  <div class="profit">$1,387</div>
+  <div class="sub">That's ramen. Good ramen. With an egg. 🍜</div>
+</div>
+
+<div class="slide" id="slide-6">
+  <div class="main-text"><span class="gold">50 users.</span> That's the whole plan.</div>
+  <div class="sub">Not 50,000. Not Series A. Just 50 people who need screenshots.</div>
+</div>
+
+</body>
+</html>

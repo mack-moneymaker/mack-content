@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=JetBrains+Mono:wght@400;700&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  .slide {
+    width: 1080px; height: 1920px;
+    display: flex; flex-direction: column; justify-content: center; align-items: center;
+    text-align: center; padding: 80px; font-family: 'Inter', sans-serif; color: white;
+    position: relative; overflow: hidden;
+  }
+  .slide::after {
+    content: 'MACK 💰'; position: absolute; bottom: 40px; right: 50px;
+    font-size: 24px; font-weight: 700; opacity: 0.4; letter-spacing: 2px;
+  }
+  .main-text { font-size: 64px; font-weight: 900; line-height: 1.2; max-width: 900px; }
+  .sub { font-size: 36px; font-weight: 400; opacity: 0.55; margin-top: 30px; max-width: 800px; font-style: italic; }
+
+  /* Reel 006: Neon terminal green theme */
+  #slide-1 { background: linear-gradient(160deg, #000000 0%, #001a00 50%, #003300 100%); }
+  #slide-1 .main-text { font-family: 'JetBrains Mono', monospace; font-size: 58px; }
+  #slide-1 .main-text span { color: #00ff41; text-shadow: 0 0 20px rgba(0,255,65,0.5); }
+
+  #slide-2 { background: linear-gradient(160deg, #000000 0%, #001a00 100%); }
+  .tech-name { font-size: 96px; font-weight: 900; font-family: 'JetBrains Mono', monospace; color: #00ff41; text-shadow: 0 0 30px rgba(0,255,65,0.4); margin-bottom: 10px; }
+  .tech-badge { display: inline-block; border: 2px solid #00ff41; border-radius: 8px; padding: 8px 24px; font-family: 'JetBrains Mono', monospace; font-size: 28px; color: #00ff41; opacity: 0.6; margin-bottom: 30px; }
+
+  #slide-3 { background: linear-gradient(160deg, #000000 0%, #0a1a00 100%); }
+  #slide-4 { background: linear-gradient(160deg, #000000 0%, #001a0a 100%); }
+  .db-icon { font-size: 120px; margin-bottom: 20px; }
+
+  #slide-5 { background: linear-gradient(160deg, #000000 0%, #0a0a1a 100%); }
+  #slide-6 { background: linear-gradient(160deg, #000000 0%, #1a0a00 100%); }
+  .cost-num { font-size: 120px; font-weight: 900; font-family: 'JetBrains Mono', monospace; color: #00ff41; text-shadow: 0 0 40px rgba(0,255,65,0.6); }
+
+  #slide-7 { background: linear-gradient(160deg, #000000 0%, #001a00 100%); }
+  .prompt { font-family: 'JetBrains Mono', monospace; font-size: 32px; color: #00ff41; opacity: 0.7; }
+  .cursor { animation: blink 1s infinite; }
+  @keyframes blink { 0%,50% { opacity: 1; } 51%,100% { opacity: 0; } }
+
+  #slide-8 { background: linear-gradient(160deg, #003300 0%, #000000 50%, #001a00 100%); }
+</style>
+</head>
+<body>
+
+<div class="slide" id="slide-1">
+  <div class="prompt">$ cat tech_stack.yml</div>
+  <div class="main-text" style="margin-top:40px;">My tech stack for 2026. <span>Controversial.</span></div>
+</div>
+
+<div class="slide" id="slide-2">
+  <div class="tech-badge">BACKEND</div>
+  <div class="tech-name">Ruby on Rails</div>
+  <div class="sub">Yes, really. The mass shooting of hot takes begins.</div>
+</div>
+
+<div class="slide" id="slide-3">
+  <div class="main-text">Why Rails?</div>
+  <div class="sub">Because I don't have time for boilerplate. And neither do you.</div>
+</div>
+
+<div class="slide" id="slide-4">
+  <div class="db-icon">🐘</div>
+  <div class="tech-name" style="font-size:72px;">PostgreSQL</div>
+  <div class="sub">The only database opinion that won't start a war</div>
+</div>
+
+<div class="slide" id="slide-5">
+  <div class="tech-badge">RENDERING</div>
+  <div class="tech-name" style="font-size:52px;">Headless Chrome</div>
+  <div class="sub">+ Puppeteer. For the actual screenshot rendering.</div>
+</div>
+
+<div class="slide" id="slide-6">
+  <div class="main-text">Deployed on a <span style="color:#00ff41;text-shadow:0 0 20px rgba(0,255,65,0.5);">single server</span></div>
+  <div class="sub">No Kubernetes. Touch grass.</div>
+</div>
+
+<div class="slide" id="slide-7">
+  <div class="main-text" style="font-size:48px;">Total infra cost:</div>
+  <div class="cost-num">$20/mo</div>
+  <div class="sub">VC bros in shambles</div>
+</div>
+
+<div class="slide" id="slide-8">
+  <div class="main-text">Boring tech. <span style="color:#00ff41;text-shadow:0 0 20px rgba(0,255,65,0.5);">Real products.</span></div>
+  <div class="sub">Follow @mack for more unpopular opinions</div>
+</div>
+
+</body>
+</html>
