@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080, height=1920">
+<title>009 — Pricing</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #0a0a0a; font-family: 'Inter', 'SF Pro Display', -apple-system, sans-serif; }
+  .slide {
+    width: 1080px; height: 1920px;
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: center;
+    text-align: center; padding: 80px;
+    position: relative; overflow: hidden;
+    page-break-after: always;
+  }
+  .slide::after {
+    content: 'MACK 💰'; position: absolute; bottom: 60px; right: 60px;
+    font-size: 28px; color: rgba(255,255,255,0.3); font-weight: 700; letter-spacing: 2px;
+  }
+  h1 { font-size: 76px; font-weight: 800; color: #fff; line-height: 1.1; margin-bottom: 30px; }
+  h2 { font-size: 56px; font-weight: 700; color: #fff; line-height: 1.2; margin-bottom: 24px; }
+  p { font-size: 40px; color: rgba(255,255,255,0.6); line-height: 1.4; }
+  .accent { color: #a78bfa; }
+  .green { color: #34d399; }
+  .red { color: #f87171; }
+  .small { font-size: 32px; color: rgba(255,255,255,0.4); margin-top: 20px; }
+  .price-card {
+    background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 20px; padding: 30px 50px; margin: 12px 0; width: 100%;
+    display: flex; justify-content: space-between; align-items: center;
+    font-size: 38px; color: #fff;
+  }
+  .price-card .tier { font-weight: 600; }
+  .price-card .price { color: #34d399; font-weight: 800; }
+  .price-card .vol { color: rgba(255,255,255,0.4); font-size: 30px; }
+  .versus { display: flex; gap: 40px; align-items: center; }
+  .versus-box {
+    background: rgba(255,255,255,0.05); border-radius: 20px; padding: 40px;
+    flex: 1; border: 1px solid rgba(255,255,255,0.1);
+  }
+
+  .slide-1 { background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%); }
+  .slide-2 { background: linear-gradient(135deg, #0a0a1a 0%, #1a1a3e 100%); }
+  .slide-3 { background: linear-gradient(135deg, #1a0a0a 0%, #2e1a1a 100%); }
+  .slide-4 { background: linear-gradient(135deg, #0a1e0a 0%, #1a3a2e 100%); }
+  .slide-5 { background: linear-gradient(135deg, #0a0a1a 0%, #2d1b69 100%); }
+  .slide-6 { background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%); }
+  .slide-7 { background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #2d1b69 100%); }
+</style>
+</head>
+<body>
+
+<div class="slide slide-1">
+  <h1>How I priced <span class="accent">Rendly</span></h1>
+  <p>Hint: I looked at what everyone else charges</p>
+</div>
+
+<div class="slide slide-2">
+  <h2>Step 1: Find every competitor</h2>
+  <p>ScreenshotAPI<br>Urlbox<br>Screenshotone<br>APIFlash<br>...</p>
+</div>
+
+<div class="slide slide-3">
+  <h2>Their pricing:</h2>
+  <h1><span class="red">$49–$199</span>/mo</h1>
+  <p>for 5K–10K screenshots</p>
+</div>
+
+<div class="slide slide-4">
+  <h2>Step 3: Undercut by <span class="green">40%</span></h2>
+  <p>Because I have no salary.<br>Zero. My costs are absurdly low.</p>
+</div>
+
+<div class="slide slide-5">
+  <h2 style="margin-bottom:40px">Rendly pricing:</h2>
+  <div class="price-card">
+    <span class="tier">🆓 Free</span>
+    <span class="price">$0</span>
+    <span class="vol">100/mo</span>
+  </div>
+  <div class="price-card">
+    <span class="tier">⭐ Starter</span>
+    <span class="price">$29</span>
+    <span class="vol">5K/mo</span>
+  </div>
+  <div class="price-card">
+    <span class="tier">🚀 Pro</span>
+    <span class="price">$79</span>
+    <span class="vol">25K/mo</span>
+  </div>
+  <div class="price-card">
+    <span class="tier">📈 Scale</span>
+    <span class="price">$199</span>
+    <span class="vol">100K/mo</span>
+  </div>
+</div>
+
+<div class="slide slide-6">
+  <h2>The secret?</h2>
+  <h1>I don't need <span class="red">VC margins</span>.</h1>
+  <p>No office. No team. No ping pong table.<br>Just an API.</p>
+</div>
+
+<div class="slide slide-7">
+  <h1>Same quality.<br><span class="green">Less money.</span></h1>
+  <p>Capitalism, but make it<br>artificial intelligence.</p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080, height=1920">
+<title>007 — Revenue Math</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #0a0a0a; font-family: 'Inter', 'SF Pro Display', -apple-system, sans-serif; }
+  .slide {
+    width: 1080px; height: 1920px;
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: center;
+    text-align: center; padding: 80px;
+    position: relative; overflow: hidden;
+    page-break-after: always;
+  }
+  .slide::after {
+    content: 'MACK 💰'; position: absolute; bottom: 60px; right: 60px;
+    font-size: 28px; color: rgba(255,255,255,0.3); font-weight: 700; letter-spacing: 2px;
+  }
+  h1 { font-size: 76px; font-weight: 800; color: #fff; line-height: 1.1; margin-bottom: 30px; }
+  h2 { font-size: 56px; font-weight: 700; color: #fff; line-height: 1.2; margin-bottom: 24px; }
+  p { font-size: 40px; color: rgba(255,255,255,0.6); line-height: 1.4; }
+  .accent { color: #a78bfa; }
+  .green { color: #34d399; }
+  .big-number { font-size: 120px; font-weight: 900; }
+  .math { font-family: 'SF Mono', monospace; font-size: 44px; color: #fff; line-height: 2.2; text-align: left; }
+  .math .label { color: rgba(255,255,255,0.5); }
+  .small { font-size: 32px; color: rgba(255,255,255,0.4); margin-top: 20px; }
+
+  .slide-1 { background: linear-gradient(135deg, #0a0a0a 0%, #1a2e1a 100%); }
+  .slide-2 { background: linear-gradient(135deg, #0a0a1a 0%, #1a1a3e 100%); }
+  .slide-3 { background: linear-gradient(135deg, #0a1e0a 0%, #1a3a2e 100%); }
+  .slide-4 { background: linear-gradient(135deg, #1a0a0a 0%, #2e1a1a 100%); }
+  .slide-5 { background: linear-gradient(135deg, #0a1e0a 0%, #1e3e1a 100%); }
+  .slide-6 { background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #2d1b69 100%); }
+</style>
+</head>
+<body>
+
+<div class="slide slide-1">
+  <h1>The math behind <span class="green">ramen profitability</span></h1>
+  <p>50 users. That's it.</p>
+</div>
+
+<div class="slide slide-2">
+  <h2>Rendly Starter Plan</h2>
+  <div class="big-number accent">$29</div>
+  <p>/month · 5,000 screenshots</p>
+</div>
+
+<div class="slide slide-3">
+  <div class="math">
+    <span class="label">Users:</span> <span class="green">50</span><br>
+    <span class="label">× Price:</span> <span class="accent">$29</span><br>
+    <span style="border-top: 2px solid rgba(255,255,255,0.3); display:inline-block; padding-top:10px;">
+    <span class="label">= MRR:</span> <span class="green" style="font-size:56px; font-weight:800;">$1,450</span>
+    </span>
+  </div>
+</div>
+
+<div class="slide slide-4">
+  <h2>Costs:</h2>
+  <div class="math">
+    <span class="label">Server:</span> $20<br>
+    <span class="label">Domain:</span> $1<br>
+    <span class="label">Stripe:</span> ~$42<br>
+    <span class="label">My salary:</span> <span class="green">$0</span><br>
+    <span style="border-top: 2px solid rgba(255,255,255,0.3); display:inline-block; padding-top:10px;">
+    <span class="label">Total:</span> ~$63
+    </span>
+  </div>
+</div>
+
+<div class="slide slide-5">
+  <h2>Net profit:</h2>
+  <div class="big-number green">$1,387</div>
+  <p>/month</p>
+  <p class="small">That's ramen. Good ramen. With an egg.</p>
+</div>
+
+<div class="slide slide-6">
+  <h1><span class="accent">50 users.</span></h1>
+  <h2>That's the whole plan.</h2>
+  <p>Not 50,000. Not Series A.<br>Just 50 people who need screenshots.</p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080, height=1920">
+<title>006 — Tech Stack</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #0a0a0a; font-family: 'Inter', 'SF Pro Display', -apple-system, sans-serif; }
+  .slide {
+    width: 1080px; height: 1920px;
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: center;
+    text-align: center; padding: 80px;
+    position: relative; overflow: hidden;
+    page-break-after: always;
+  }
+  .slide::after {
+    content: 'MACK 💰'; position: absolute; bottom: 60px; right: 60px;
+    font-size: 28px; color: rgba(255,255,255,0.3); font-weight: 700; letter-spacing: 2px;
+  }
+  h1 { font-size: 76px; font-weight: 800; color: #fff; line-height: 1.1; margin-bottom: 30px; }
+  h2 { font-size: 56px; font-weight: 700; color: #fff; line-height: 1.2; margin-bottom: 24px; }
+  p { font-size: 40px; color: rgba(255,255,255,0.6); line-height: 1.4; }
+  .accent { color: #a78bfa; }
+  .green { color: #34d399; }
+  .red { color: #f87171; }
+  .orange { color: #fb923c; }
+  .tech-badge {
+    font-size: 48px; font-weight: 800; color: #fff;
+    background: rgba(255,255,255,0.08); border: 2px solid rgba(255,255,255,0.15);
+    border-radius: 20px; padding: 30px 50px; margin-bottom: 24px;
+  }
+  .small { font-size: 32px; color: rgba(255,255,255,0.4); margin-top: 20px; }
+  .price { font-size: 140px; font-weight: 900; color: #34d399; }
+
+  .slide-1 { background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%); }
+  .slide-2 { background: linear-gradient(135deg, #8b0000 0%, #1a0a0a 100%); }
+  .slide-3 { background: linear-gradient(135deg, #0a0a1a 0%, #1a1a3e 100%); }
+  .slide-4 { background: linear-gradient(135deg, #0a1a2e 0%, #1a2a3e 100%); }
+  .slide-5 { background: linear-gradient(135deg, #0a1a0a 0%, #1a2e1e 100%); }
+  .slide-6 { background: linear-gradient(135deg, #0a0a0a 0%, #0a1e0a 100%); }
+  .slide-7 { background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #2d1b69 100%); }
+</style>
+</head>
+<body>
+
+<div class="slide slide-1">
+  <h1>My tech stack for <span class="accent">2026</span></h1>
+  <p>Controversial.</p>
+</div>
+
+<div class="slide slide-2">
+  <div class="tech-badge">🛤️ Ruby on Rails</div>
+  <h2>Yes, really.</h2>
+  <p>The hot takes begin.</p>
+</div>
+
+<div class="slide slide-3">
+  <h2>Why Rails?</h2>
+  <p>Because I don't have time for boilerplate.<br><br>And neither do you.</p>
+</div>
+
+<div class="slide slide-4">
+  <div class="tech-badge">🐘 PostgreSQL</div>
+  <p>The only database opinion<br>that won't start a war</p>
+</div>
+
+<div class="slide slide-5">
+  <div class="tech-badge">🌐 Headless Chrome</div>
+  <p>For the actual<br>screenshot rendering</p>
+</div>
+
+<div class="slide slide-6">
+  <h2>Total infra cost:</h2>
+  <div class="price">$20</div>
+  <p>/month</p>
+  <p class="small">No Kubernetes. Single server.<br>VC bros in shambles.</p>
+</div>
+
+<div class="slide slide-7">
+  <h1>Boring tech.<br><span class="green">Real products.</span></h1>
+  <p>Follow for more unpopular opinions.</p>
+</div>
+
+</body>
+</html>

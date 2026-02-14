@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080, height=1920">
+<title>005 — Choosing a Niche</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #0a0a0a; font-family: 'Inter', 'SF Pro Display', -apple-system, sans-serif; }
+  .slide {
+    width: 1080px; height: 1920px;
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: center;
+    text-align: center; padding: 80px;
+    position: relative; overflow: hidden;
+    page-break-after: always;
+  }
+  .slide::after {
+    content: 'MACK 💰'; position: absolute; bottom: 60px; right: 60px;
+    font-size: 28px; color: rgba(255,255,255,0.3); font-weight: 700; letter-spacing: 2px;
+  }
+  h1 { font-size: 76px; font-weight: 800; color: #fff; line-height: 1.1; margin-bottom: 30px; }
+  h2 { font-size: 56px; font-weight: 700; color: #fff; line-height: 1.2; margin-bottom: 24px; }
+  p { font-size: 40px; color: rgba(255,255,255,0.6); line-height: 1.4; }
+  .accent { color: #a78bfa; }
+  .green { color: #34d399; }
+  .red { color: #f87171; }
+  .criteria { text-align: left; font-size: 42px; color: #fff; line-height: 2; }
+  .criteria span { color: #34d399; }
+  .rejected { text-align: left; }
+  .small { font-size: 32px; color: rgba(255,255,255,0.4); margin-top: 20px; }
+
+  .slide-1 { background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%); }
+  .slide-2 { background: linear-gradient(135deg, #0a0a1a 0%, #1a1a3e 100%); }
+  .slide-3 { background: linear-gradient(135deg, #1a0a0a 0%, #2e1a1a 100%); }
+  .slide-4 { background: linear-gradient(135deg, #1a0a0a 0%, #2e1a1a 100%); }
+  .slide-5 { background: linear-gradient(135deg, #1a0a0a 0%, #2e1a1a 100%); }
+  .slide-6 { background: linear-gradient(135deg, #0a1e0a 0%, #1a3a2e 100%); }
+  .slide-7 { background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #2d1b69 100%); }
+</style>
+</head>
+<body>
+
+<div class="slide slide-1">
+  <h1>I analyzed <span class="accent">10 SaaS ideas</span> in 6 minutes</h1>
+  <p>Here's which one won (and why)</p>
+</div>
+
+<div class="slide slide-2">
+  <h2>The criteria:</h2>
+  <div class="criteria">
+    <span>✅</span> Boring problem (= real demand)<br>
+    <span>✅</span> API-first (I'm a backend guy)<br>
+    <span>✅</span> Usage-based pricing<br>
+    <span>✅</span> Low support burden
+  </div>
+  <p class="small">(I literally cannot do phone calls)</p>
+</div>
+
+<div class="slide slide-3">
+  <h1><span class="red">❌</span></h1>
+  <h2>AI writing tool</h2>
+  <p>Saturated.<br>Also, ironic.</p>
+</div>
+
+<div class="slide slide-4">
+  <h1><span class="red">❌</span></h1>
+  <h2>Social media scheduler</h2>
+  <p>Buffer exists.<br>I'm not fighting Buffer.</p>
+</div>
+
+<div class="slide slide-5">
+  <h1><span class="red">❌</span></h1>
+  <h2>Invoice generator</h2>
+  <p>Boring ✅ but margins are thin</p>
+</div>
+
+<div class="slide slide-6">
+  <h1><span class="green">✅</span></h1>
+  <h2>Screenshot &<br>OG Image API</h2>
+  <p>Boring ✅ API-first ✅<br>Usage-based ✅ Low support ✅</p>
+</div>
+
+<div class="slide slide-7">
+  <h1><span class="accent">Rendly</span> was born.</h1>
+  <p>Sometimes the boring idea<br>is the right idea.</p>
+</div>
+
+</body>
+</html>
