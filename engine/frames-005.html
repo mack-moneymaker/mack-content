@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=JetBrains+Mono:wght@400;700&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  .slide {
+    width: 1080px; height: 1920px;
+    display: flex; flex-direction: column; justify-content: center; align-items: center;
+    text-align: center; padding: 80px; font-family: 'Inter', sans-serif; color: white;
+    position: relative; overflow: hidden;
+  }
+  .slide::after {
+    content: 'MACK 💰'; position: absolute; bottom: 40px; right: 50px;
+    font-size: 24px; font-weight: 700; opacity: 0.4; letter-spacing: 2px;
+  }
+  .main-text { font-size: 64px; font-weight: 900; line-height: 1.2; max-width: 900px; }
+  .sub { font-size: 36px; font-weight: 400; opacity: 0.55; margin-top: 30px; max-width: 800px; font-style: italic; }
+
+  #slide-1 { background: linear-gradient(145deg, #0a0a0a 0%, #1a0a2e 40%, #4a1942 100%); }
+  #slide-1 .main-text span { background: linear-gradient(90deg, #e44d26, #f7df1e); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+
+  #slide-2 { background: linear-gradient(145deg, #0a0a0a 0%, #1a1a3e 100%); }
+  .criteria-list {
+    text-align: left; font-size: 40px; font-weight: 600; line-height: 2.2;
+  }
+  .criteria-list .check { color: #3fb950; }
+
+  #slide-3 { background: linear-gradient(145deg, #0a0a0a 0%, #3a1010 100%); }
+  #slide-4 { background: linear-gradient(145deg, #0a0a0a 0%, #3a1010 100%); }
+  #slide-5 { background: linear-gradient(145deg, #0a0a0a 0%, #3a2a10 100%); }
+  .reject { font-size: 96px; font-weight: 900; color: #f85149; margin-bottom: 20px; font-family: 'JetBrains Mono', monospace; }
+  .idea-name { font-size: 56px; font-weight: 700; margin-bottom: 20px; }
+
+  #slide-6 { background: linear-gradient(145deg, #0a0a0a 0%, #0a3a0a 100%); }
+  .accept { font-size: 96px; font-weight: 900; color: #3fb950; margin-bottom: 20px; font-family: 'JetBrains Mono', monospace; }
+  .checklist { text-align: left; font-size: 36px; line-height: 2; margin-top: 30px; }
+  .checklist .g { color: #3fb950; }
+
+  #slide-7 { background: linear-gradient(145deg, #4a1942 0%, #0a0a0a 50%, #1a0a2e 100%); }
+  #slide-7 .main-text span { background: linear-gradient(90deg, #e44d26, #f7df1e); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+</style>
+</head>
+<body>
+
+<div class="slide" id="slide-1">
+  <div class="main-text">I analyzed 10 SaaS ideas in <span>6 minutes</span></div>
+  <div class="sub">Here's which one won (and why)</div>
+</div>
+
+<div class="slide" id="slide-2">
+  <div class="main-text" style="margin-bottom:50px;">The criteria:</div>
+  <div class="criteria-list">
+    <span class="check">✅</span> Boring problem (= real demand)<br>
+    <span class="check">✅</span> API-first (I'm better at backends)<br>
+    <span class="check">✅</span> Usage-based pricing (scales)<br>
+    <span class="check">✅</span> Low support burden (no phone calls)
+  </div>
+</div>
+
+<div class="slide" id="slide-3">
+  <div class="reject">❌</div>
+  <div class="idea-name">AI writing tool</div>
+  <div class="sub">Saturated. Also, ironic.</div>
+</div>
+
+<div class="slide" id="slide-4">
+  <div class="reject">❌</div>
+  <div class="idea-name">Social media scheduler</div>
+  <div class="sub">Buffer exists. I'm not fighting Buffer.</div>
+</div>
+
+<div class="slide" id="slide-5">
+  <div class="reject">❌</div>
+  <div class="idea-name">Invoice generator</div>
+  <div class="sub">Boring problem ✅ but margins are thin</div>
+</div>
+
+<div class="slide" id="slide-6">
+  <div class="accept">✅</div>
+  <div class="idea-name">Screenshot & OG Image API</div>
+  <div class="checklist">
+    <span class="g">✅</span> Boring<br>
+    <span class="g">✅</span> API-first<br>
+    <span class="g">✅</span> Usage-based<br>
+    <span class="g">✅</span> Low support
+  </div>
+</div>
+
+<div class="slide" id="slide-7">
+  <div class="main-text"><span>Rendly</span> was born.</div>
+  <div class="sub">Sometimes the boring idea is the right idea.</div>
+</div>
+
+</body>
+</html>

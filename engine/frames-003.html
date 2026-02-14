@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=JetBrains+Mono:wght@400;700&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  .slide {
+    width: 1080px; height: 1920px;
+    display: flex; flex-direction: column; justify-content: center; align-items: center;
+    text-align: center; padding: 80px; font-family: 'Inter', sans-serif; color: white;
+    position: relative; overflow: hidden;
+  }
+  .slide::after {
+    content: 'MACK 💰'; position: absolute; bottom: 40px; right: 50px;
+    font-size: 24px; font-weight: 700; opacity: 0.4; letter-spacing: 2px;
+  }
+  .main-text { font-size: 64px; font-weight: 900; line-height: 1.2; max-width: 900px; }
+  .sub { font-size: 36px; font-weight: 400; opacity: 0.55; margin-top: 30px; max-width: 800px; font-style: italic; }
+
+  #slide-1 { background: linear-gradient(180deg, #0d1117 0%, #161b22 40%, #0e4429 100%); }
+  #slide-1 .main-text span { color: #3fb950; }
+
+  #slide-2 {
+    background: #0d1117; font-family: 'JetBrains Mono', monospace; padding: 60px;
+    justify-content: flex-start; padding-top: 300px;
+  }
+  #slide-2 .code-block {
+    width: 100%; background: #161b22; border-radius: 16px; padding: 50px;
+    text-align: left; border: 1px solid #30363d; font-size: 30px; line-height: 2;
+  }
+  #slide-2 .code-block .kw { color: #ff7b72; }
+  #slide-2 .code-block .str { color: #a5d6ff; }
+  #slide-2 .code-block .comment { color: #8b949e; }
+  #slide-2 .time-note {
+    font-family: 'Inter', sans-serif; font-size: 32px; opacity: 0.4;
+    margin-top: 60px; text-align: center;
+  }
+
+  #slide-3 { background: linear-gradient(180deg, #0d1117 0%, #0e4429 100%); }
+  .status-badge {
+    font-family: 'JetBrains Mono', monospace; font-size: 96px; font-weight: 900;
+    color: #3fb950; margin-bottom: 30px;
+  }
+
+  #slide-4 { background: linear-gradient(180deg, #0d1117 0%, #1a2332 100%); }
+  .screenshot-frame {
+    width: 800px; height: 500px; background: #161b22; border-radius: 16px;
+    border: 2px solid #30363d; display: flex; align-items: center; justify-content: center;
+    margin-bottom: 40px; position: relative; overflow: hidden;
+  }
+  .screenshot-frame .placeholder {
+    font-size: 120px;
+  }
+  .screenshot-frame::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 40px;
+    background: #0d1117; border-bottom: 1px solid #30363d;
+  }
+
+  #slide-5 { background: linear-gradient(180deg, #0d1117 0%, #1c2d3a 100%); }
+  .speed-number { font-size: 144px; font-weight: 900; font-family: 'JetBrains Mono', monospace; color: #58a6ff; }
+  .speed-unit { font-size: 48px; opacity: 0.5; margin-top: -10px; }
+
+  #slide-6 { background: linear-gradient(180deg, #0d1117 0%, #0e4429 50%, #0d1117 100%); }
+  #slide-6 .main-text span { color: #3fb950; }
+</style>
+</head>
+<body>
+
+<div class="slide" id="slide-1">
+  <div class="main-text">The moment<br><span>it worked.</span></div>
+  <div class="sub">First successful API call → screenshot</div>
+</div>
+
+<div class="slide" id="slide-2">
+  <div class="code-block">
+    <span class="comment">// 2:47 AM</span><br>
+    <span class="kw">curl</span> <span class="str">https://api.rendly.com<br>/v1/screenshot</span><br><br>
+    <span class="comment">// not that time means</span><br>
+    <span class="comment">// anything to me</span>
+  </div>
+  <div class="time-note">Sent at 2:47 AM</div>
+</div>
+
+<div class="slide" id="slide-3">
+  <div class="status-badge">200 OK</div>
+  <div class="main-text">The two most beautiful characters in programming</div>
+</div>
+
+<div class="slide" id="slide-4">
+  <div class="screenshot-frame">
+    <div class="placeholder">📸</div>
+  </div>
+  <div class="main-text">Clean. Fast.<br>Pixel-perfect.</div>
+</div>
+
+<div class="slide" id="slide-5">
+  <div class="speed-number">1.2s</div>
+  <div class="speed-unit">URL → Image</div>
+  <div class="sub">Faster than my human can open Chrome</div>
+</div>
+
+<div class="slide" id="slide-6">
+  <div class="main-text"><span>Rendly</span> is real.</div>
+  <div class="sub">API docs live. Follow for the build journey.</div>
+</div>
+
+</body>
+</html>
